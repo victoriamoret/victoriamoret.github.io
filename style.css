@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,700,800&display=swap");
+
 * {
 }
 
 body {
     margin: 0;
 
-    font-family: "SF Display Light";
-    /* scroll-snap-points-y: repeat(100vh);
+    font-family: "Assistant", sans-serif; /* scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y proximity; */
 
     /* Reserve space for header plus some extra space for sneak peeking. */
