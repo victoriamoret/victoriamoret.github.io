@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Victoria Moret - Full Stack Web Developer</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on("click", function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $("html, body").animate(
+                        {
+                            scrollTop: $(hash).offset().top
+                        },
+                        800,
+                        function() {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        }
+                    );
+                } // End if
+            });
+        });
+    </script>
+    <body>
+        <nav>
+            <ul>
+                <a href="#home"> <li>Home</li></a>
+
+                <a href="#about"> <li>About</li></a>
+                <a href="#projects"> <li>Projects</li></a>
+                <a href="/cv"> <li>CV</li></a>
+            </ul>
+            <h2 class="logo">VICTORIA MORET</h2>
+        </nav>
+        <div id="main">
+            <div id="home" class="section-container-full">
+                <div class="section-content">
+                    <!--
+                        <img src="./profile.jpg" class="profile" alt="victoria-moret" />
+                    -->
+                    <h1>My CV</h1>
+                    <h2>Full Stack Web Developer</h2>
+                    <p class="intro">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                    </p>
+                </div>
+            </div>
+
+            <div id="about" class="section-container">
+                <div class="section-content">
+                    <h3>Experience</h3>
+                    <h4>28 years old</h4>
+                    <h4>born in France</h4>
+                    <h4>living in Berlin, Germany</h4>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="big-section">
+                    <h2>
+                        Check my Linkedin for full details
+                        <a href="#">link here</a>
+                    </h2>
+                    <h2>2010-2018</h2>
+                    <p>
+                        Worked for Apple, ComputaCenter, Sykes (PlayStation
+                        Support) as a technical support agent. Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+
+            <div id="projects" class="section-container">
+                <div class="section-content">
+                    <h3>Projects</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="section-container">
+                <div class="section-content">
+                    <h3>Skills</h3>
+                    JavaScript:<br /><br />
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="130"
+                        height="18"
+                        viewBox="0 0 130 18"
+                    >
+                        <defs>
+                            <clipPath id="clip-path">
+                                <rect width="18" height="18" fill="none" />
+                            </clipPath>
+                        </defs>
+                        <g
+                            id="Selection_Control_Checkbox_On_Enabled"
+                            data-name="Selection Control / Checkbox / On / Enabled"
+                            transform="translate(84)"
+                            clip-path="url(#clip-path)"
+                        >
+                            <path
+                                id="Selection_Control_Checkbox_On_Enabled-2"
+                                data-name="Selection Control / Checkbox / On / Enabled"
+                                d="M22-681H8a2,2,0,0,0-2,2v14a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2v-14A2,2,0,0,0,22-681Zm-9,14-5-5,1.41-1.41L13-669.83l7.59-7.59L22-676Z"
+                                transform="translate(-6 681)"
+                            />
+                        </g>
+                        <g
+                            id="Selection_Control_Checkbox_On_Enabled-3"
+                            data-name="Selection Control / Checkbox / On / Enabled"
+                            transform="translate(56)"
+                            clip-path="url(#clip-path)"
+                        >
+                            <path
+                                id="Selection_Control_Checkbox_On_Enabled-4"
+                                data-name="Selection Control / Checkbox / On / Enabled"
+                                d="M22-681H8a2,2,0,0,0-2,2v14a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2v-14A2,2,0,0,0,22-681Zm-9,14-5-5,1.41-1.41L13-669.83l7.59-7.59L22-676Z"
+                                transform="translate(-6 681)"
+                            />
+                        </g>
+                        <g
+                            id="Selection_Control_Checkbox_On_Enabled-5"
+                            data-name="Selection Control / Checkbox / On / Enabled"
+                            transform="translate(28)"
+                            clip-path="url(#clip-path)"
+                        >
+                            <path
+                                id="Selection_Control_Checkbox_On_Enabled-6"
+                                data-name="Selection Control / Checkbox / On / Enabled"
+                                d="M22-681H8a2,2,0,0,0-2,2v14a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2v-14A2,2,0,0,0,22-681Zm-9,14-5-5,1.41-1.41L13-669.83l7.59-7.59L22-676Z"
+                                transform="translate(-6 681)"
+                            />
+                        </g>
+                        <g
+                            id="Selection_Control_Checkbox_On_Enabled-7"
+                            data-name="Selection Control / Checkbox / On / Enabled"
+                            clip-path="url(#clip-path)"
+                        >
+                            <path
+                                id="Selection_Control_Checkbox_On_Enabled-8"
+                                data-name="Selection Control / Checkbox / On / Enabled"
+                                d="M22-681H8a2,2,0,0,0-2,2v14a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2v-14A2,2,0,0,0,22-681Zm-9,14-5-5,1.41-1.41L13-669.83l7.59-7.59L22-676Z"
+                                transform="translate(-6 681)"
+                            />
+                        </g>
+                        <g
+                            id="Selection_Control_Checkbox_Off_Enabled"
+                            data-name="Selection Control / Checkbox / Off / Enabled"
+                            transform="translate(112)"
+                            clip-path="url(#clip-path)"
+                        >
+                            <path
+                                id="Selection_Control_Checkbox_Off_Enabled-2"
+                                data-name="Selection Control / Checkbox / Off / Enabled"
+                                d="M22-623v14H8v-14Zm0-2H8a2.006,2.006,0,0,0-2,2v14a2.006,2.006,0,0,0,2,2H22a2.006,2.006,0,0,0,2-2v-14A2.006,2.006,0,0,0,22-625Z"
+                                transform="translate(-6 625)"
+                            />
+                        </g></svg
+                    ><br />
+                    Reactjs:<br /><br />
+                    <div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="130"
+                            height="18"
+                            viewBox="0 0 130 18"
+                        >
+                            <defs>
+                                <clipPath id="clip-path">
+                                    <rect width="18" height="18" fill="none" />
+                                </clipPath>
+                            </defs>
+                            <g
+                                id="Selection_Control_Checkbox_On_Enabled"
+                                data-name="Selection Control / Checkbox / On / Enabled"
+                                transform="translate(56)"
+                                clip-path="url(#clip-path)"
+                            >
+                                <path
+                                    id="Selection_Control_Checkbox_On_Enabled-2"
+                                    data-name="Selection Control / Checkbox / On / Enabled"
+                                    d="M22-681H8a2,2,0,0,0-2,2v14a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2v-14A2,2,0,0,0,22-681Zm-9,14-5-5,1.41-1.41L13-669.83l7.59-7.59L22-676Z"
+                                    transform="translate(-6 681)"
+                                />
+                            </g>
+                            <g
+                                id="Selection_Control_Checkbox_On_Enabled-3"
+                                data-name="Selection Control / Checkbox / On / Enabled"
+                                transform="translate(28)"
+                                clip-path="url(#clip-path)"
+                            >
+                                <path
+                                    id="Selection_Control_Checkbox_On_Enabled-4"
+                                    data-name="Selection Control / Checkbox / On / Enabled"
+                                    d="M22-681H8a2,2,0,0,0-2,2v14a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2v-14A2,2,0,0,0,22-681Zm-9,14-5-5,1.41-1.41L13-669.83l7.59-7.59L22-676Z"
+                                    transform="translate(-6 681)"
+                                />
+                            </g>
+                            <g
+                                id="Selection_Control_Checkbox_On_Enabled-5"
+                                data-name="Selection Control / Checkbox / On / Enabled"
+                                clip-path="url(#clip-path)"
+                            >
+                                <path
+                                    id="Selection_Control_Checkbox_On_Enabled-6"
+                                    data-name="Selection Control / Checkbox / On / Enabled"
+                                    d="M22-681H8a2,2,0,0,0-2,2v14a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2v-14A2,2,0,0,0,22-681Zm-9,14-5-5,1.41-1.41L13-669.83l7.59-7.59L22-676Z"
+                                    transform="translate(-6 681)"
+                                />
+                            </g>
+                            <g
+                                id="Selection_Control_Checkbox_Off_Enabled"
+                                data-name="Selection Control / Checkbox / Off / Enabled"
+                                transform="translate(112)"
+                                clip-path="url(#clip-path)"
+                            >
+                                <path
+                                    id="Selection_Control_Checkbox_Off_Enabled-2"
+                                    data-name="Selection Control / Checkbox / Off / Enabled"
+                                    d="M22-623v14H8v-14Zm0-2H8a2.006,2.006,0,0,0-2,2v14a2.006,2.006,0,0,0,2,2H22a2.006,2.006,0,0,0,2-2v-14A2.006,2.006,0,0,0,22-625Z"
+                                    transform="translate(-6 625)"
+                                />
+                            </g>
+                            <g
+                                id="Selection_Control_Checkbox_Off_Enabled-3"
+                                data-name="Selection Control / Checkbox / Off / Enabled"
+                                transform="translate(84)"
+                                clip-path="url(#clip-path)"
+                            >
+                                <path
+                                    id="Selection_Control_Checkbox_Off_Enabled-4"
+                                    data-name="Selection Control / Checkbox / Off / Enabled"
+                                    d="M22-623v14H8v-14Zm0-2H8a2.006,2.006,0,0,0-2,2v14a2.006,2.006,0,0,0,2,2H22a2.006,2.006,0,0,0,2-2v-14A2.006,2.006,0,0,0,22-625Z"
+                                    transform="translate(-6 625)"
+                                />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

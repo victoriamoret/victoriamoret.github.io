@@ -1,69 +1,120 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
-.slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to left, #e36719c2, #ff7a0057);
-    z-index: -1;
+
+body {
+    margin: 0;
+
+    font-family: "SF Display Light";
+    /* scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y proximity; */
+
+    /* Reserve space for header plus some extra space for sneak peeking. */
+    /* scroll-padding-top: 150px; useful for sticky navs, to have stuff scroll after*/
+}
+body {
+    scroll-snap-type: y proximity;
+}
+nav a {
+}
+#home,
+#about,
+#projects {
+    position: relative;
+    scroll-snap-align: start;
+}
+.logo {
+    float: right;
+    width: 60vw;
 }
 nav {
-    display: grid;
-    grid-template-columns: 10% 1fr 1fr 10%;
-    min-height: 10vh;
-    color: black;
+    display: flex;
     align-items: center;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
 }
-#logo {
-    grid-column: 2/3;
-    font-size: 5vh;
-    font-family: "Yeseva One", cursive;
-}
-.hamburger {
-    justify-self: end;
-    height: 38%;
+ul {
+    width: 40vw;
+
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0;
 }
 
-section {
-    display: flex;
-    height: 80vh;
+ul li {
+}
+h1 {
+    font-family: "SF Display";
+    line-height: 3rem;
+    font-size: 4rem;
+    margin: 2rem 0;
+    max-width: 500px;
+}
+
+.section-content {
+    display: grid;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    float: left;
+}
+
+.big-section {
+    width: 50vw;
+    padding: 1rem;
+    background: white;
+    box-shadow: 10px 10px;
+}
+video {
+    float: right;
+    width: 60vw;
+}
+.section-container {
+    height: 100vh;
+    scroll-snap-align: start;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
-.hero {
-    height: 60%;
-    position: relative;
+.section-container-full {
+    height: 100vh;
+    scroll-snap-align: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 100vh;
+    display: flex;
+    min-width: 40vw;
+    width: min-content;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: row-reverse;
 }
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+section p {
+}
+.section-container:nth-of-type(2) {
+    background: rgb(244, 222, 89);
+}
+.section-container:nth-of-type(3) {
+    /* background: rgba(154, 222, 249, 0.75); */
+}
+.section-container:nth-of-type(4) {
+    background: rgb(236, 185, 234);
 }
 
-.hero::after {
-    content: "";
-    background: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.2;
+.profile {
+    height: 26vh;
+    border-radius: 100%;
 }
 
-.headline {
-    position: absolute;
-    top: 70%;
-    left: 10%;
-    font-size: 10vw;
-    transform: translate(-20%, -70%);
-    color: white;
-    z-index: 3;
-    padding-bottom: 1rem;
-    font-family: "Yeseva One", cursive;
+nav h2 {
+    padding-left: 1rem;
 }
