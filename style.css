@@ -16,7 +16,6 @@ body {
     scroll-snap-type: y proximity;
 }
 #icon {
-    visibility: visible;
     height: 2em;
     width: 2em;
     background: black;
@@ -25,13 +24,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 2em;
 }
 nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    z-index: 999;
+    top: 0;
 }
 nav a {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 0 2vw;
 }
 
 #home,
@@ -39,15 +46,10 @@ nav a {
 #projects {
     position: relative;
     scroll-snap-align: start;
+    min-height: 100vh;
+    height: fit-content;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    position: fixed;
-    z-index: 999;
-}
 ul {
     width: 40vw;
 
