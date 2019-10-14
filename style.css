@@ -86,6 +86,12 @@ h1 {
     justify-items: center;
     float: left;
     padding-top: 4vh;
+    max-width: 700px;
+}
+
+.white {
+    padding: 5vw;
+    background: white;
 }
 
 video {
@@ -103,8 +109,7 @@ video {
 }
 .section-container-full {
     background: url("./img/background.jpg");
-    object-fit: scale-down;
-    background-size: contain;
+    background-size: cover;
     flex-direction: column;
     justify-content: center;
     align-items: center;
