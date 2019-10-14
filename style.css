@@ -16,8 +16,8 @@ body {
     scroll-snap-type: y proximity;
 }
 #icon {
-    height: 2em;
-    width: 2em;
+    height: 3em;
+    width: 3em;
     background: black;
     margin: 0;
     color: white;
@@ -25,6 +25,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-right: 2em;
+    cursor: url(hand.cur), pointer;
 }
 nav {
     display: flex;
@@ -50,14 +51,14 @@ nav a {
     height: fit-content;
 }
 
-ul {
-    width: 40vw;
-
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
     text-align: center;
     padding: 0;
+    position: relative;
+    left: -50vw;
 }
 
 ul li {
@@ -77,11 +78,11 @@ h1 {
 
 .section-content {
     display: grid;
-    /* justify-content: center; */
     align-items: center;
     text-align: center;
     justify-items: center;
     float: left;
+    padding-top: 4vh;
 }
 
 video {
@@ -89,8 +90,6 @@ video {
     width: 60vw;
 }
 .section-container {
-    height: 100vh;
-    scroll-snap-align: start;
     justify-content: center;
     align-items: center;
     padding: 1rem;
@@ -99,13 +98,10 @@ video {
     flex-direction: row;
 }
 .section-container-full {
-    height: 100vh;
-    scroll-snap-align: start;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    height: 100vh;
     display: flex;
     min-width: 40vw;
 }
