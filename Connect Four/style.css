@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+}
+body {
+    background: linear-gradient(
+        30deg,
+        #7d55d8,
+        #e05ed3,
+        #5ec0e0,
+        #e05e94,
+        #1b4880,
+        #e0c95e
+    );
+    background-size: 1200% 1200%;
+    -webkit-animation: gradientWalk 8s ease infinite;
+    -moz-animation: gradientWalk 8s ease infinite;
+    animation: gradientWalk 8s ease infinite;
+    overflow: hidden;
+}
+@-webkit-keyframes gradientWalk {
+    0% {
+        background-position: 0% 9%;
+    }
+    50% {
+        background-position: 100% 92%;
+    }
+    100% {
+        background-position: 0% 9%;
+    }
+}
+@-moz-keyframes gradientWalk {
+    0% {
+        background-position: 0% 9%;
+    }
+    50% {
+        background-position: 100% 92%;
+    }
+    100% {
+        background-position: 0% 9%;
+    }
+}
+@keyframes gradientWalk {
+    0% {
+        background-position: 0% 9%;
+    }
+    50% {
+        background-position: 100% 92%;
+    }
+    100% {
+        background-position: 0% 9%;
+    }
+}
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slot {
+    margin: 2px;
+}
+.hole {
+    border: 2px #111 dashed;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+.slot.player1 .hole {
+    background-color: black;
+}
+.slot.player2 .hole {
+    background-color: white;
+    border: 2px white solid;
+}
+.winner {
+    visibility: hidden;
+    text-align: center;
+    font-size: 3rem;
+    position: absolute;
+    display: grid;
+    align-content: space-evenly;
+    justify-content: center;
+    width: 100%;
+    top: initial;
+    background-image: url("images/img-noise-361x370.png");
+    opacity: 0.75;
+    height: 480px;
+    font-weight: 700;
+    z-index: 100;
+}
+.new-game {
+    visibility: hidden;
+    text-align: center;
+    line-height: 4rem;
+}
+.new-game p {
+    animation: blink 2s infinite;
+    background: #040404;
+    width: max-content;
+    margin: 0 auto;
+    color: white;
+    line-height: 5rem;
+    font-size: 4rem;
+}
+.button {
+    visibility: hidden;
+    margin-top: 2rem;
+}
+.winner button {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 20%;
+    font-weight: 700;
+    text-align: center;
+    background: none;
+    border: 2px solid black;
+    animation: example 1s linear 0s infinite alternate;
+}
+.winner button:hover {
+    background: black;
+    color: white;
+}
+.player-color h1 {
+    grid-column: span 2;
+    overflow: hidden;
+    padding: 0px 20px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 2s steps(100, end);
+}
+.player-color p {
+    text-align: end;
+    font-size: 1.75rem;
+    text-align: center;
+}
+.player-color {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.fa-kiss {
+    font-size: 3.75rem;
+}
+#white {
+    color: white;
+}
+.restart {
+    display: flex;
+    margin: 1rem auto;
+    height: 3rem;
+    font-weight: 700;
+    text-align: center;
+    background: none;
+    border: 2px solid black;
+    overflow-x: hidden;
+}
+.restart:hover {
+    background: black;
+    color: white;
+    animation: shake 1s cubic-bezier(1, 0.07, 0.19, 0.97) both 1;
+}
+.fa-gamepad {
+    font-size: 2rem;
+    margin: 1%;
+}
+.arrows {
+    display: grid;
+    grid-template-columns: repeat(7, 64px);
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+@keyframes example {
+    from {
+        width: 150px;
+    }
+    to {
+        width: 200px;
+    }
+}
