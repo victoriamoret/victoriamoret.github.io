@@ -35,6 +35,8 @@ nav {
     position: sticky;
     z-index: 2;
     top: -2px;
+    height: 3rem;
+    width: min-content;
 }
 nav a {
     color: black;
@@ -100,6 +102,9 @@ video {
     flex-direction: row;
 }
 .section-container-full {
+    background: url("./img/background.jpg");
+    object-fit: scale-down;
+    background-size: contain;
     flex-direction: column;
     justify-content: center;
     align-items: center;
