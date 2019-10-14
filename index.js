@@ -4,7 +4,7 @@ var uls = document.querySelector("nav ul");
 icon.style.visibility = "visible";
 nav.style.visibility = "hidden";
 
-icon.onclick = function() {
+icon.onclick = function close() {
     if (nav.style.visibility == "hidden") {
         nav.style.visibility = "visible";
         icon.innerHTML = "X";
@@ -19,5 +19,10 @@ icon.onclick = function() {
         nav.style.transition = "0.5s ease-out";
         nav.style.visibility = "hidden";
         icon.innerHTML = "=";
+    }
+};
+document.getElementsByTagName("body")[0].onscroll = () => {
+    if (nav.style.visibility == "visible") {
+        icon.onclick();
     }
 };

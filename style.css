@@ -29,6 +29,7 @@ body {
     z-index: 3;
 }
 nav {
+    visibility: hidden;
     display: flex;
     align-items: center;
     text-align: center;
@@ -37,6 +38,7 @@ nav {
     top: -2px;
     height: 3rem;
     width: min-content;
+    padding-right: 1rem;
 }
 nav a {
     color: black;
