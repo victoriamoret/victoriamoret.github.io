@@ -26,14 +26,15 @@ body {
     justify-content: center;
     margin-right: 2em;
     cursor: url(hand.cur), pointer;
+    z-index: 3;
 }
 nav {
     display: flex;
     align-items: center;
     text-align: center;
     position: sticky;
-    z-index: 999;
-    top: 0;
+    z-index: 2;
+    top: -2px;
 }
 nav a {
     color: black;
