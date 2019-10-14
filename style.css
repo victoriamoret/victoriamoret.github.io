@@ -111,13 +111,13 @@ video {
 }
 
 .section-container:nth-of-type(2) {
-    background: #eccbcd;
+    background: #f3f8ff;
 }
 .section-container:nth-of-type(3) {
-    background: #ffd2aa;
+    background: #deecff;
 }
 .section-container:nth-of-type(4) {
-    background: #f6fbbb;
+    background: #c6cfff;
 }
 
 .profile {
