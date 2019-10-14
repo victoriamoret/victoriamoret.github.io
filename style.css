@@ -99,7 +99,6 @@ section p {
 }
 .section-container:nth-of-type(3) {
     background: #ffd2aa;
-    /* background: rgba(154, 222, 249, 0.75); */
 }
 .section-container:nth-of-type(4) {
     background: #f6fbbb;
