@@ -118,6 +118,7 @@ video {
     padding: 1rem;
     display: flex;
     min-width: 40vw;
+    object-fit: cover;
 }
 .about {
     flex-direction: column;
