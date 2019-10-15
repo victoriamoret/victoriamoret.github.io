@@ -30,10 +30,9 @@ body {
     justify-content: center;
     margin-right: 2em;
     cursor: url(hand.cur), pointer;
-    z-index: 3;
+    z-index: 10;
 }
 nav {
-    visibility: hidden;
     display: flex;
     align-items: center;
     text-align: center;
@@ -51,13 +50,26 @@ nav a {
     padding: 0 2vw;
 }
 
+.portrait {
+    width: 20vw;
+    min-width: 150px;
+    max-width: 100%;
+    border-radius: 100%;
+}
+
 #home,
 #about,
-#projects {
+#projects,
+#skills,
+#timeline {
     position: relative;
     scroll-snap-align: start;
     min-height: 100vh;
     height: fit-content;
+}
+
+#timeline {
+    margin-bottom: 4rem;
 }
 
 nav ul {
@@ -81,15 +93,6 @@ h1 {
     max-width: 500px; */
 }
 
-.small {
-    background: white;
-}
-
-.section-container h2 {
-    text-transform: uppercase;
-    font-size: 2rem;
-}
-
 .section-content {
     display: grid;
     align-items: center;
@@ -101,8 +104,9 @@ h1 {
 }
 
 .white {
-    padding: 5vw;
+    padding: 2rem;
     background: white;
+    box-shadow: 1px 1px 10px #0000003d;
 }
 
 video {
@@ -135,8 +139,8 @@ video {
 .section-container:nth-of-type(3) {
     background: white;
 }
-.section-container:nth-of-type(4) {
-    /* background: #c6cfff; */
+.section-container:nth-of-type(5) {
+    background: white;
 }
 
 .profile {
@@ -159,9 +163,45 @@ picture img {
     max-height: 100vh;
     min-width: 100vw;
 }
+button {
+    margin: 8px;
+}
 
 .card {
     margin: 1rem auto;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    background: black;
+    border-radius: 100%;
+    align-self: center;
+    justify-self: center;
+}
+.date h1 {
+    margin-bottom: 3rem;
+}
+.date {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-row-gap: 2rem;
+}
+
+.date span {
+    padding: 0 2rem;
+    /* width: 87%; */
+    /* justify-self: self-end; */
+    text-align: initial;
+}
+
+.line {
+    width: 100%;
+    background: black;
+    height: 1rem;
+    margin: 2.5rem auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -171,9 +211,7 @@ picture img {
 }
 
 @media only screen and (min-width: 600px) {
-    .small {
-        padding: 2rem;
-    }
     white {
+        padding: 2rem;
     }
 }

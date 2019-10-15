@@ -1,6 +1,9 @@
 var nav = document.querySelector("nav");
 var icon = document.getElementById("icon");
 var uls = document.querySelector("nav ul");
+var circles = document.querySelectorAll(".circle");
+var whiteSections = document.querySelectorAll(".white");
+console.log(circles);
 icon.style.visibility = "visible";
 nav.style.visibility = "hidden";
 
@@ -26,3 +29,17 @@ document.getElementsByTagName("body")[0].onscroll = () => {
         icon.onclick();
     }
 };
+
+for (let i = 0; i < whiteSections.length; i++) {
+    console.log(whiteSections[i].offsetHeight);
+
+    if (whiteSections[i].offsetHeight > 400) {
+        console.log("bigger");
+        whiteSections[i].style.marginTop = 2 + "em";
+    }
+    // if (whiteSections[i].style.height > 30 + "vh") {
+    //     console.log("bigger");
+    // } else {
+    //     console.log("smaller");
+    // }
+}
