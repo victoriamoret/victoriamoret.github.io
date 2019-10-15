@@ -81,6 +81,10 @@ h1 {
     max-width: 500px; */
 }
 
+.small {
+    background: white;
+}
+
 .section-container h2 {
     text-transform: uppercase;
     font-size: 2rem;
@@ -168,7 +172,8 @@ picture img {
 
 @media only screen and (min-width: 600px) {
     .small {
-        background: white;
         padding: 2rem;
+    }
+    white {
     }
 }
