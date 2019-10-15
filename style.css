@@ -155,7 +155,4 @@ nav h2 {
     body {
         overflow-x: hidden;
     }
-    #background {
-        max-width: 100vw;
-    }
 }
