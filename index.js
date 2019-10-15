@@ -29,7 +29,7 @@ document.getElementsByTagName("body")[0].onscroll = () => {
         icon.onclick();
     }
 };
-// 
+//
 // for (let i = 0; i < whiteSections.length; i++) {
 //     console.log(whiteSections[i].offsetHeight);
 //
@@ -37,9 +37,9 @@ document.getElementsByTagName("body")[0].onscroll = () => {
 //         console.log("bigger");
 //         whiteSections[i].style.marginTop = 2 + "em";
 //     }
-    // if (whiteSections[i].style.height > 30 + "vh") {
-    //     console.log("bigger");
-    // } else {
-    //     console.log("smaller");
-    // }
-}
+// if (whiteSections[i].style.height > 30 + "vh") {
+//     console.log("bigger");
+// } else {
+//     console.log("smaller");
+// }
+// }
