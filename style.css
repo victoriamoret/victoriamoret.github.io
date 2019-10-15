@@ -125,7 +125,7 @@ video {
 }
 
 .section-container:nth-of-type(2) {
-    background: #f3f8ff;
+    /* background: #f3f8ff; */
 }
 .section-container:nth-of-type(3) {
     background: #deecff;
@@ -153,6 +153,11 @@ picture {
 picture img {
     max-height: 100vh;
     min-width: 100vw;
+}
+
+.small {
+    background: #f3f8ff;
+    padding: 2rem;
 }
 
 @media only screen and (max-width: 450px) {
