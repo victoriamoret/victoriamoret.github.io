@@ -81,9 +81,9 @@ nav ul {
     justify-content: space-around;
     text-align: center;
     padding: 0;
-    position: relative;
-    left: -50vw;
+    position: absolute;
     margin: 0;
+    left: -100px;
 }
 
 ul li {

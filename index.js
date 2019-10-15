@@ -13,10 +13,10 @@ icon.onclick = function() {
         icon.innerHTML = "X";
         // nav.style.background = "white";
         // nav.style.transition = "0.5s ease-out";
-        uls.style.transform = "translate(+50vw)";
+        uls.style.left = 50 + "px";
         uls.style.transition = "0.5s ease-out";
     } else {
-        uls.style.transform = "translate(-50vw)";
+        uls.style.left = -100 + "vw";
         uls.style.transition = "1s ease-out";
         // nav.style.background = "none";
         // nav.style.transition = "0.5s ease-out";
