@@ -142,3 +142,9 @@ video {
 nav h2 {
     padding-left: 1rem;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .section-container-full {
+        background: url("./img/background.jpg") cover center center fixed;
+    }
+}
