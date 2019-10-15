@@ -21,6 +21,8 @@ body {
     scroll-snap-type: y proximity;
 }
 #icon {
+    top: 0;
+    position: absolute;
     min-height: 3em;
     min-width: 3em;
     background: black;
