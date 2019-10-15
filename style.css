@@ -155,13 +155,18 @@ picture img {
     min-width: 100vw;
 }
 
-.small {
-    background: #f3f8ff;
-    padding: 2rem;
-}
-
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
     body {
         overflow-x: hidden;
+    }
+    .section-container:nth-of-type(2) {
+        background: #f3f8ff;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .small {
+        background: #f3f8ff;
+        padding: 2rem;
     }
 }
