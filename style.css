@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Assistant:400,700,800&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Advent+Pro&display=swap");
 * {
 }
 html {
@@ -11,7 +10,7 @@ html {
 body {
     margin: 0;
 
-    font-family: "Assistant", sans-serif; /* scroll-snap-points-y: repeat(100vh);
+    /* scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y proximity; */
 
     /* Reserve space for header plus some extra space for sneak peeking. */
@@ -35,6 +34,29 @@ body {
     cursor: url(hand.cur), pointer;
     z-index: 10;
 }
+
+.title {
+    font-family: "Abril Fatface", cursive;
+    font-size: 5rem;
+}
+.sub-title {
+    font-size: 3rem;
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h1,
+h2,
+h3 {
+    font-family: "Advent Pro", sans-serif;
+}
+
 nav {
     display: flex;
     align-items: center;
