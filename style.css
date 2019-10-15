@@ -119,6 +119,7 @@ video {
     padding: 1rem;
     display: flex;
     min-width: 40vw;
+    height: 100vh;
 }
 .about {
     flex-direction: column;
@@ -141,4 +142,11 @@ video {
 
 nav h2 {
     padding-left: 1rem;
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
 }
