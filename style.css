@@ -111,8 +111,8 @@ video {
     flex-direction: row;
 }
 .section-container-full {
-    background: url("./img/background.jpg");
-    background-size: auto 100%;
+    background: url(./img/background.jpg) no-repeat;
+    background-size: cover;
     flex-direction: column;
     justify-content: center;
     align-items: center;
