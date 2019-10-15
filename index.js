@@ -29,14 +29,14 @@ document.getElementsByTagName("body")[0].onscroll = () => {
         icon.onclick();
     }
 };
-
-for (let i = 0; i < whiteSections.length; i++) {
-    console.log(whiteSections[i].offsetHeight);
-
-    if (whiteSections[i].offsetHeight > 400) {
-        console.log("bigger");
-        whiteSections[i].style.marginTop = 2 + "em";
-    }
+// 
+// for (let i = 0; i < whiteSections.length; i++) {
+//     console.log(whiteSections[i].offsetHeight);
+//
+//     if (whiteSections[i].offsetHeight > 400) {
+//         console.log("bigger");
+//         whiteSections[i].style.marginTop = 2 + "em";
+//     }
     // if (whiteSections[i].style.height > 30 + "vh") {
     //     console.log("bigger");
     // } else {
