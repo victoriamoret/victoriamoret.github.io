@@ -106,7 +106,7 @@ nav ul {
     padding: 0;
     position: absolute;
     margin: 0;
-    left: -100px;
+    left: -100vw;
 }
 
 ul li {
