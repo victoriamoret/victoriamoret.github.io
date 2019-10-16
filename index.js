@@ -3,9 +3,13 @@ var icon = document.getElementById("icon");
 var uls = document.querySelector("nav ul");
 var circles = document.querySelectorAll(".circle");
 var whiteSections = document.querySelectorAll(".white");
-console.log(circles);
+
+//onload setup
+
 icon.style.visibility = "visible";
 nav.style.visibility = "hidden";
+
+//menu toggle
 
 icon.onclick = function() {
     if (nav.style.visibility == "hidden") {
@@ -24,11 +28,15 @@ icon.onclick = function() {
         icon.innerHTML = "=";
     }
 };
+//make menu disappear on scroll:
+
 // document.getElementsByTagName("body")[0].onscroll = () => {
 //     if (nav.style.visibility == "visible") {
 //         icon.onclick();
 //     }
 // };
+
+//active nav ul :
 
 let mainNavLinks = document.querySelectorAll("nav ul a li");
 let mainSections = document.querySelectorAll(
@@ -45,6 +53,7 @@ window.addEventListener("scroll", event => {
         if (
             link.offsetTop + link.offsetHeight >= fromTop &&
             link.offsetTop - 100 <= fromTop
+            //-100 for the padding
         ) {
             li.classList.add("current");
         } else {
@@ -52,6 +61,8 @@ window.addEventListener("scroll", event => {
         }
     });
 });
+
+//DRAFTS:
 
 //
 // for (let i = 0; i < whiteSections.length; i++) {

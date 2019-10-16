@@ -195,6 +195,7 @@ picture img {
     min-width: 100vw;
     height: auto;
     object-fit: cover;
+    object-position: top;
 }
 button {
     margin: 8px;
