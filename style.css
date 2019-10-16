@@ -73,6 +73,9 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     padding: 0 2vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .portrait {
@@ -107,6 +110,7 @@ nav ul {
     position: absolute;
     margin: 0;
     left: -100vw;
+    height: 48px;
 }
 
 ul li {
@@ -231,6 +235,11 @@ button {
     background: black;
     height: 1rem;
     margin: 2.5rem auto;
+}
+
+.current {
+    background: black;
+    color: white;
 }
 
 @media only screen and (max-width: 600px) {

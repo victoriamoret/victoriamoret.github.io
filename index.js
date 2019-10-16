@@ -24,11 +24,35 @@ icon.onclick = function() {
         icon.innerHTML = "=";
     }
 };
-document.getElementsByTagName("body")[0].onscroll = () => {
-    if (nav.style.visibility == "visible") {
-        icon.onclick();
-    }
-};
+// document.getElementsByTagName("body")[0].onscroll = () => {
+//     if (nav.style.visibility == "visible") {
+//         icon.onclick();
+//     }
+// };
+
+let mainNavLinks = document.querySelectorAll("nav ul a li");
+let mainSections = document.querySelectorAll(
+    "#home, #about, #projects, #skills, #timeline"
+);
+
+window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainSections.forEach(link => {
+        console.log(link.id);
+        let li = document.querySelector("[href='#" + link.id + "']");
+        console.log("test", test);
+        if (
+            link.offsetTop + link.offsetHeight >= fromTop &&
+            link.offsetTop - 100 <= fromTop
+        ) {
+            li.classList.add("current");
+        } else {
+            li.classList.remove("current");
+        }
+    });
+});
+
 //
 // for (let i = 0; i < whiteSections.length; i++) {
 //     console.log(whiteSections[i].offsetHeight);
