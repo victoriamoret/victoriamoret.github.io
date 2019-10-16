@@ -246,16 +246,29 @@ button {
     body {
         overflow-x: hidden;
     }
+
+    nav a {
+        align-items: center;
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 @media only screen and (min-width: 600px) {
-    white {
+    .white {
         padding: 2rem;
     }
 }
 
-html {
-}
+align-items: center;
+/* text-align: center; */
+display: flex;
+justify-content: center;
 
 @include media-breakpoint-up(sm) {
     html {
