@@ -39,13 +39,12 @@ body {
     font-family: "Abril Fatface";
     font-size: 5rem;
 }
-.sub-title {
-    font-size: 3rem;
-}
+
 h1 {
     font-size: 5rem;
 }
-h2 {
+h2,
+.sub-title {
     font-size: 3rem;
 }
 h3 {
@@ -101,6 +100,12 @@ nav a {
     margin-bottom: 4rem;
 }
 
+#about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -132,12 +137,15 @@ h1 {
     /* padding-top: 4vh; */
     max-width: 700px;
     margin-top: 3rem;
+    width: fit-content;
 }
 
 .white {
     padding: 2rem;
     background: white;
     box-shadow: 1px 1px 10px #0000003d;
+    width: fit-content;
+    margin: auto auto;
 }
 
 video {
@@ -263,13 +271,13 @@ button {
 @media only screen and (min-width: 600px) {
     .white {
         padding: 2rem;
+        max-width: 600px;
     }
 }
 
-align-items: center;
-/* text-align: center; */
+/* align-items: center; text-align: center;
 display: flex;
-justify-content: center;
+justify-content: center; */
 
 @include media-breakpoint-up(sm) {
     html {
