@@ -87,7 +87,6 @@ nav a {
 }
 
 #home,
-#about,
 #projects,
 #skills,
 #timeline {
@@ -105,6 +104,8 @@ nav a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 nav ul {
