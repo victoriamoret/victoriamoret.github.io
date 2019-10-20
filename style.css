@@ -146,7 +146,7 @@ h1 {
     background: white;
     box-shadow: 1px 1px 10px #0000003d;
     width: fit-content;
-    margin: auto auto;
+    margin: 2rem auto;
 }
 
 video {
