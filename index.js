@@ -1,8 +1,6 @@
 var nav = document.querySelector("nav");
 var icon = document.getElementById("icon");
 var uls = document.querySelector("nav ul");
-var circles = document.querySelectorAll(".circle");
-var whiteSections = document.querySelectorAll(".white");
 
 //onload setup
 
@@ -78,3 +76,7 @@ window.addEventListener("scroll", event => {
 //     console.log("smaller");
 // }
 // }
+
+$('.carousel').carousel({
+    interval: 2000
+  })

@@ -120,8 +120,6 @@ nav ul {
     height: 48px;
 }
 
-ul li {
-}
 h1 {
     /* font-family: "SF Display"; */
     /* line-height: 3rem;
@@ -251,6 +249,12 @@ button {
 .current {
     background: black;
     color: white;
+}
+.card img {
+    max-height: 250px;
+    width: auto;
+    object-fit: cover;
+    object-position: top center;
 }
 
 @media only screen and (max-width: 600px) {
