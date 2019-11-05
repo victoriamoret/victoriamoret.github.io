@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+            rel="stylesheet"
+        />
+        <meta
+            name="viewport"
+            content="width=device-witdth, initial-scale=1.0"
+        />
+    </head>
+    <body>
+        <nav id="overlay">
+            <img
+                src="./images/close.svg"
+                alt=""
+                class="close-btn"
+                id="close-menu"
+            />
+            <ul>
+                <li><a href="#">home</a> <span>hurry, get back!</span></li>
+                <li><a href="#">about us</a> <span>hurry, get back!</span></li>
+                <li><a href="#">services</a> <span>hurry, get back!</span></li>
+                <li><a href="#">contact</a> <span>hurry, get back!</span></li>
+            </ul>
+        </nav>
+        <header>
+            <a href="#" class="logo">Victoria Moret</a>
+
+            <img
+                src="./images/menu.svg"
+                alt=""
+                class="menu-btn"
+                id="open-menu"
+            />
+        </header>
+        <div class="scroll">
+            <div class="section-container">
+                <div class="section-content">
+                    <h3>Projects</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="section-container">
+                <div class="section-content">
+                    <h3>Projects</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="section-container">
+                <div class="section-content">
+                    <h3>Projects</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var overlay = document.getElementById("overlay");
+        var closeMenu = document.getElementById("close-menu");
+        document
+            .getElementById("open-menu")
+            .addEventListener("click", function() {
+                overlay.classList.add("show-menu");
+                document.body.style.overflow = "hidden";
+            });
+        document
+            .getElementById("close-menu")
+            .addEventListener("click", function() {
+                overlay.classList.remove("show-menu");
+                document.body.style.overflow = "visible";
+            });
+    </script>
+</html>

@@ -76,7 +76,3 @@ window.addEventListener("scroll", event => {
 //     console.log("smaller");
 // }
 // }
-
-$('.carousel').carousel({
-    interval: 2000
-  })
