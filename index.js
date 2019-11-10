@@ -45,9 +45,7 @@ window.addEventListener("scroll", event => {
     let fromTop = window.scrollY;
 
     mainSections.forEach(link => {
-        console.log(link.id);
         let li = document.querySelector("[href='#" + link.id + "']");
-        console.log("test", test);
         if (
             link.offsetTop + link.offsetHeight >= fromTop &&
             link.offsetTop - 100 <= fromTop
