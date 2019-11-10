@@ -1,0 +1,20 @@
+<div class="profile-wrapper">
+
+<form class="profile" method="post">
+    <h1>Profile Information</h1>
+    <h2>Tell us more about yourself if you'd like to :</h2>
+
+    Age :
+     <input type="text" name="age">
+    City :
+     <input type="text" name="city">
+    Your website (ommiting http or https):
+     <input type="text" name="url">
+
+
+     <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+     <button type="submit" name="button" id="register">Update profile</button>
+</form>
+
+ </div>

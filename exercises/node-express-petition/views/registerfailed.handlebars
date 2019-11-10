@@ -1,0 +1,16 @@
+<div class="register-wrapper">
+    <h1>You have not filled all the required fields, sorry</h1>
+<form class="register" method="post">
+    First name:
+     <input type="text" name="firstname">
+     Last name:
+     <input type="text" name="lastname">
+     Email address: 
+     <input type="text" name="email">
+     Password:
+     <input type="password" name="password">
+     <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+     <button type="submit" name="button" id="register">REGISTER</button>
+</form>
+</div>

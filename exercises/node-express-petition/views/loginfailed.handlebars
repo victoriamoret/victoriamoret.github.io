@@ -1,0 +1,17 @@
+<div class="login-wrapper">
+    <h1>Oups!</h1>
+
+    <p>The password and/or email is incorrect, please try again</p>
+    <p>You don't have an account yet? You can register <a href="/register">here</a></p>
+<p>{{incomplete}}</p>
+<form class="login" method="post">
+    <p>All fields are required</p>
+     Email address:
+     <input type="text" name="email">
+     Password:
+     <input type="password" name="password">
+     <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+     <button type="submit" name="button" id="register">LOGIN</button>
+</form>
+</div>

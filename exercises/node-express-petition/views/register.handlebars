@@ -1,0 +1,31 @@
+<div class="register-wrapper">
+
+<form class="register" method="post">
+        <h1 style="text-decoration: underlined">{{incomplete}}</h1><br><br>
+    <h1>Sign-up to the website below</h1>
+    <h2 style="font-style: italic;text-decoration: underline;"> <a href="/login">
+You already have an account? Please log in HERE</a></h2>
+    <p>All fields are required</p>
+    First name:
+     <input type="text" name="first">
+     Last name:
+     <input type="text" name="last">
+     Email address:
+     <input type="text" name="email">
+     Password:
+     <input type="password" name="password">
+        Age:
+     <select class="age" name="age">
+         <option value="18+">18+</option>
+   <option value="18-25">18-25</option>
+   <option value="25-40">25-40</option>
+   <option value="40-60">40-60</option>
+
+   <option value="60+">60+</option>
+   <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+     </select>
+
+     <button type="submit" name="button" id="register">REGISTER</button>
+</form>
+ </div>

@@ -1,0 +1,32 @@
+<div class="edit-wrapper">
+        <h1>Profile edition</h1>
+        <h2>{{edit}}</h2>
+<form method="POST"  class="edit-form">
+    <p>First name :</p>
+<input type="text" name="first" value="{{first}}" placeholder="{{first}}">
+<p>Last name :</p>
+<input type="text" name="last" value="{{last}}">
+<p>Email :</p>
+<input type="text" name="email" value="{{email}}">
+<p>Password :</p>
+<input type="password" name="password" value="">
+<p>City :</p>
+<input type="text" name="city" value="{{city}}">
+
+<p>Age :</p>
+<input type="text" name="age" value="{{age}}">
+<p>Url :</p>
+<input type="text" name="url" value="{{url}}">
+<input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+<button type="submit">UPDATE</button>
+<div class="delete-buttons">
+</form>
+
+
+
+<a href="/delete-account"><button type="button" name="button" >Delete whole account</button></a>
+<a href="/delete-signature"><button type="button" name="button">Delete signature only</button></a>
+</div>
+
+</div>

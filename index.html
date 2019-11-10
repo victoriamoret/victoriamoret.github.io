@@ -23,7 +23,6 @@
             
                         <ul>
                             <a href="#home"> <li id="test">Home</li></a>
-            
                             <a href="#about"> <li>About</li></a>
                             <a href="#projects"> <li>Projects</li></a>
                             <a href="#skills"> <li>Skills</li></a>
@@ -114,40 +113,87 @@
                     <div class="container">
                         Find exercises (during bootcamp) which cannot be displayed as a demo under <a href="https://github.com/victoriamoret/victoriamoret.github.io/tree/master/exercises" target="_blank" rel="noopener noreferrer">this repository folder</a>.
                         <div class="row">
-                   
-                            <div class="col">
-                                    <div class="card" style="width: 18rem;">
-                                            <a
-                                            href="    https://socialnetworkreact.herokuapp.com/"
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <h5 class="card-header">React, Redux, PostgreSQL, Socket.io</h5>
+                                    <a
+                                        href="    https://socialnetworkreact.herokuapp.com/"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="./img/social.png"
+                                            class="card-img-top"
+                                            alt="..."
+                                        />
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Social network</h5>
+                                            <ul class="card-text">
+                                                <h5>Features</h5>
+                                               <li> a login page, database (postgresql), password encryption, cookies for session etc.</li>
+                                               <li> profile page with different editable fields</li>
+                                               <li> a live chat and seeing online users (socketio)</li>
+                                               <li> add friends, see if the request has been sent / accepted. Accept and remove friends. (postgreSQL)
+                                               <li> picture uploader with AWS</li>
+                                               <li> Deployed on Heroku with env vars, postgresql dyno, and setup for socketio.</li>
+                                            </ul>
+
+                                        <a href="    https://socialnetworkreact.herokuapp.com/"
                                             target="_blank"
-                                        ><img
-                                                src="./img/social.png"
-                                                class="card-img-top"
-                                                alt="..."
-                                            /></a>
+                                            class="btn btn-primary"
+                                        >
+                                        Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                                <h5 class="card-header">Node, Express, Express-handlebars, PostgreSQL</h5>
+
+                                            <a
+                                            href="http://zelda-petition.herokuapp.com/"
+                                            target="_blank"
+                                            >
+                                            <img
+                                            src="./img/petition.png"
+                                            class="card-img-top"
+                                            alt="..."
+                                            />
+                                            <video controls autoplay>
+                                                <source src="./img/phonetics.mp4"  type="video/mp4">
+                                              </video>
+                                            </a>    
                                             <div class="card-body">
-                                                <h5 class="card-title">Social network</h5>
-                                                <p class="card-text">
-                                                   Social network made with React, node, socket.io, redux, postgresql.
-                                                   I implemented :
-                                                   - a login page -> database (postgresql), password encryption...
-                                                   - profile page with biography functionnality
-                                                   - a live chat and seeing online users 
-                                                   - add friends, see if the request has been sent / accepted. Accept and remove friends.
-                                                   - picture uploader with AWS
-                                                   Deployed on Heroku with env vars, postgresql, and setup for socketio.
-                                                </p>
-                                                <a
-                                                    href="    https://socialnetworkreact.herokuapp.com/"
-                                                    target="_blank"
-                                                    class="btn btn-primary"
-                                                >
-                                                    Live Demo</a
-                                                >
+                                                <h5 class="card-title">Petition</h5>
+                                                            <ul class="card-text">
+                                                                <h5>Features</h5>
+                                                               <li> a login page, database (postgresql), password encryption, cookies for session etc.</li>
+                                                               <li> profile page with different editable fields</li>
+                                                               <li> a canvas to "sign" the petition, possibility to delete info, account and signature</li>
+                                                               <li> check who signed the petition </li>
+                                                               <li> Deployed on Heroku with env vars, postgresql dyno</li>
+                                                            </ul>
+                
+                                                            <a
+                                                            href="http://zelda-petition.herokuapp.com/"
+                                                            class="btn btn-primary"
+                                                            target="_blank"
+                                                        >
+                                                        Live Demo</a>
+                                                        <a
+                                                        href="http://zelda-petition.herokuapp.com/"
+                                                        class="btn btn-primary"
+                                                        target="_blank"
+                                                    >
+                                                    GitHub</a>
                                             </div>
                                         </div>
-                                        
-                                    <div class="card" style="width: 18rem;">
+                                    </div>
+                                </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card">
                                             <a
                                             href="    https://victoriamoret-handlebars.herokuapp.com/projects/Spotify"
                                             target="_blank"
@@ -163,7 +209,7 @@
                                                     own search tool. This project was then
                                                     integrated in a express-handlebars portfolio
                                                     project I made at the coding bootcamp.
-                                                </p>
+                                               </p>
                                                 <a
                                                     href="    https://victoriamoret-handlebars.herokuapp.com/projects/Spotify"
                                                     target="_blank"
@@ -172,13 +218,12 @@
                                                     Live Demo</a
                                                 >
                                             </div>
-                                        </div>
+                                    </div>
                                         
                                 
-                            </div>
-
-                            <div class="col">
-                                    <div class="card" style="width: 18rem;">
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card">
                                             <a
                                             href="./Connect Four/index.html"
                                             target="_blank"
@@ -209,60 +254,20 @@
                                             >
                                         </div>
                                     </div>
-                                <div class="card" style="width: 18rem;">
-                                        <a
-                                        href="http://zelda-petition.herokuapp.com/"
-                                        target="_blank"
-                                    >
-                                    <img
-                                        src="./img/petition.png"
-                                        class="card-img-top"
-                                        alt="..."
-                                    />
-                                    </a>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Petition</h5>
-                                        <p class="card-text">
-            
-                                        </p>
-                                        <a
-                                            href="http://zelda-petition.herokuapp.com/"
-                                            class="btn btn-primary"
-                                            target="_blank"
-                                        >
-                                            Live Demo</a
-                                        >
-                                    </div>
-
                                 </div>
-                                <div class="card" style="width: 18rem;">
-                                        <a
-                                        href="./Animation-timeline/index.html"
-                                        target="_blank"
-                                    >
-                                            <img
-                                                src="./img/timeline.png"
-                                                class="card-img-top"
-                                                alt="..."
-                                            />
-                                            </a>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Timeline js library
-                                            </h5>
-                                            <a
-                                                href="./Animation-timeline/index.html"
-                                                target="_blank"
-                                                class="btn btn-primary"
-                                            >
-                                                Live Demo</a
-                                            >
-                                        </div>
-                                    </div>
                             </div>
+
+
+                        </div>
+                        <div class="row">
+                                <video controls autoplay>
+                                        <source src="./img/gbstudio.mp4"  type="video/mp4">
+                                        </video>
+                                        <video controls autoplay>
+                                            <source src="./img/adobexd.mp4"  type="video/mp4">
+                                        </video>
                         </div>
                     </div>
-
-
                 </div>
             </div>
             <div id="skills" class="section-container">

@@ -1,0 +1,23 @@
+<div class="petition-wrap">
+<form class="petition" method="post">
+    <h1>Sign the petition here:</h1>
+    Signature :
+     <input type="hidden" name="_csrf" value="{{csrfToken}}">
+     <input type= "hidden" value="" name="signatureimg" id="sigimg">
+
+     <div class="signature-canvas">
+
+     <canvas id="canvas" width="300" height="150"></canvas>
+           </div>
+      <!-- You can leave a comment here:
+      <input type="text" name="comment" class="comment"> -->
+      <div class="petition-buttons">
+
+
+     <button type="button" id="clear">Clear</button>
+
+
+     <button type="submit" name="button" id="submit">SIGN</button>
+           </div>
+</form>
+</div>

@@ -6,18 +6,11 @@ html {
     max-width: 100vw;
     height: auto;
     font-size: 1rem;
+    scroll-snap-type: y proximity;
 }
 
 body {
     margin: 0;
-
-    /* scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y proximity; */
-
-    /* Reserve space for header plus some extra space for sneak peeking. */
-    /* scroll-padding-top: 150px; useful for sticky navs, to have stuff scroll after*/
-}
-body {
     scroll-snap-type: y proximity;
 }
 #icon {
@@ -87,6 +80,7 @@ nav a {
 }
 
 #home,
+#about,
 #projects,
 #skills,
 #timeline {
@@ -95,7 +89,9 @@ nav a {
     min-height: 100vh;
     height: fit-content;
 }
-
+#projects ul  {
+    text-align: left;
+}
 #timeline {
     margin-bottom: 4rem;
 }
